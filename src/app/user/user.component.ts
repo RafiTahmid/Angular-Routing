@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-user',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class UserComponent {
 
+  userId: string | null = null
+  constructor(private route: ActivatedRoute) {
+    this.userId = this.route.snapshot.paramMap.get('id')
+  }
 }
