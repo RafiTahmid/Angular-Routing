@@ -6,7 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
-  text = 'Test message for Pipes';
+  text = 'Test Message for Pipes';
 
   today = Date()
+  student = {
+    id: '789',
+    name: 'backbencher',
+    class: 'IX'
+  }
 }
